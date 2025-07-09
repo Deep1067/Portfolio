@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(120deg, #6a0dad, #9c27b0);
+  background: linear-gradient(120deg, #3d8aa8, #432588);
 }
 
 .login-form {
@@ -100,6 +100,7 @@ body {
   z-index: 999;
 }
 
+
 .logo {
   font-size: 1.5em;
   font-weight: bold;
@@ -150,6 +151,56 @@ header {
 .btn:hover {
   background-color: #531a8e;
 }
+/* === HERO SECTION (HOME PAGE) === */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f0fa;
+  padding: 60px 40px;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 1100px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #6a0dad;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background-color: #531a8e;
+}
+
+.hero-image img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
 
 .about-section {
@@ -177,6 +228,25 @@ header {
   line-height: 1.6;
   margin-bottom: 10px;
 }
+.about-content h3 {
+  margin-top: 25px;
+  color: #6a0dad;
+  font-size: 1.4rem;
+}
+
+.about-list {
+  text-align: left;
+  list-style: none;
+  margin: 20px 0;
+  padding-left: 0;
+}
+
+.about-list li {
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
 
 .projects-section {
   padding: 60px 40px;
@@ -217,6 +287,51 @@ header {
    display: flex;
   justify-content: space-evenly;
 }
+/* === PROJECTS UPGRADE === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 25px;
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.tech-tags {
+  display: inline-block;
+  background-color: #f1e5fc;
+  color: #6a0dad;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
 
 
 .contact-section {
@@ -256,6 +371,64 @@ header {
   font-size: 1.1rem;
   color: #555;
 }
+/* === CONTACT SECTION === */
+.contact-section {
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-subtext {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.contact-icons a {
+  font-size: 1.4rem;
+  margin-right: 15px;
+  color: #6a0dad;
+  transition: 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #f57c00;
+}
+
 
 
 
