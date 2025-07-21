@@ -1,3 +1,51 @@
+
+/* === THEME VARIABLES === */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f4f0fa;
+  --primary-color: #6a0dad;
+}
+
+/* === DARK THEME OVERRIDE === */
+body.dark-theme {
+  --bg-color: #563c91;
+  --text-color: #f0f0f0;
+  --card-bg: #2a2a2a;
+}
+
+/* === APPLYING THE VARIABLES === */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar, .footer, .hero {
+  background-color: var(--card-bg);
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
 /* === LOGIN PAGE === */
 .login-container {
   display: flex;
@@ -80,11 +128,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #111;
-}
 
 
 .navbar {
